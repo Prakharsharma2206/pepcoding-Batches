@@ -404,9 +404,9 @@ public static int wordBreak_(String str, String ans)
     for (int i = 1; i <= str.length(); i++)
     {
         String smallstr = str.substring(0, i);
-        if (map.conatins(smallstr))
+        if (map.contains(smallstr))
         {
-            count += wordBreak_(str.substr(i), ans + smallstr + " ");
+            count += wordBreak_(str.substring(i), ans + smallstr + " ");
         }
     }
 
